@@ -34,6 +34,7 @@ L'architecture de projet :
 
 <h2>Le resultats de DATABASE version</h2>
 <img src="captures/image2.png">
+
 <h2>Le resultats Capteurs version</h2>
 <img src="captures/image3.png">
 
