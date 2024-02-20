@@ -1,10 +1,15 @@
 package metier;
 
+import dao.DaoImpl;
 import dao.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class IMetierImpl implements IMetier {
     //cette classe depend à l'interface IDao donc on utilise le couplage faible e
     // il y a pas de new pour ne pas etre au couplage fort
+@Autowired
     private IDao iDao;
 
     @Override
