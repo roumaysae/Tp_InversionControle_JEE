@@ -46,3 +46,6 @@ L'architecture de projet :
 ## Conclusion
 
 Ce projet a permis de comprendre l'importance de l'IoC et de l'Injection de Dépendances dans le développement logiciel moderne. En adoptant ces principes, les applications deviennent plus flexibles, modulaires et faciles à maintenir. L'utilisation de frameworks comme Spring facilite la mise en œuvre de ces concepts et contribue à améliorer la qualité du code.
+Voici ci-joint le rapport :
+https://docs.google.com/document/d/1m85Y2kXAKkIP01arEmOzQ1cLSJMJKdsx2x5nq_kVwWQ/edit?usp=sharing
+
