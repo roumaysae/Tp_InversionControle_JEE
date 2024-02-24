@@ -2,7 +2,9 @@ package Presentation;
 import metier.IMetier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
 
+@Controller // alias
 public class PresAvecSpringxml {
     public static void main(String[] args) {
         //l'objet de contexte qui va lire le fichier config.txt

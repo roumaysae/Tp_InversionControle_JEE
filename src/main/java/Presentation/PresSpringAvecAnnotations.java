@@ -4,7 +4,7 @@ import metier.IMetier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-public class PresAvecAnnotations {
+public class PresSpringAvecAnnotations {
     public static void main(String[] args) {
         //ici spring qui va lire et chercher s'il y a components dans les package dao et metier puis il va les instancier
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(

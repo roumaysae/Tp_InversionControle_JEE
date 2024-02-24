@@ -11,8 +11,9 @@ public class IMetierImpl implements IMetier {
     // il y a pas de new pour ne pas etre au couplage fort
 //@Autowired //l'injection des dependances //
     private IDao iDao;
-//constructor
-    public IMetierImpl(IDao iDao) {
+//constructor au lieu d'utiliser @Autowired
+
+     public IMetierImpl(IDao iDao) {
         this.iDao = iDao;
     }
 
