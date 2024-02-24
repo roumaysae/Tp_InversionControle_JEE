@@ -38,12 +38,12 @@ L'architecture de projet :
 <h2>Le resultats Capteurs version</h2>
 <img src="captures/image3.png">
 
-# Vous pouvez observez cette partie d'utilisation de Framework Spring est au niveau de la 2eme branche MASTER ainsi qu'il est un  projet gerer par maven
+# Vous pouvez observez cette partie d'utilisation de Framework Spring est au niveau de la 2eme branche MASTE ainsi qu'il est un  projet gerer par maven
 
 3. **Utilisation du Framework Spring**:
    - Utiliser le Framework Spring pour la gestion des dépendances.
    - Présenter deux approches : configuration XML et annotations, mettant en avant les avantages en termes de configuration et de testabilité.
-Dans cette partie j'ai travaille sur la version avec constructeur et avec la methode set pour injecter les dependences, vous pouvez trouvez cette partie au niveau de la branche Master.
+Dans cette partie j'ai travaille sur la version avec constructeur et avec la methode set en utilisant l'injection @Autowired pour injecter les dependences, vous pouvez trouvez cette partie au niveau de la branche Master.
 
 ## Conclusion
 
