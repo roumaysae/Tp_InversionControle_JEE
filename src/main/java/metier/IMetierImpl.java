@@ -5,12 +5,16 @@ import dao.IDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("metier")
 public class IMetierImpl implements IMetier {
     //cette classe depend à l'interface IDao donc on utilise le couplage faible e
     // il y a pas de new pour ne pas etre au couplage fort
-@Autowired
+//@Autowired //l'injection des dependances //
     private IDao iDao;
+//constructor
+    public IMetierImpl(IDao iDao) {
+        this.iDao = iDao;
+    }
 
     @Override
     public double calcul() {
@@ -25,7 +29,7 @@ public class IMetierImpl implements IMetier {
     }
 //pour affecter une valeur à la variable IDao un objet d'une classe qui implemente IDao
 // C-a-d Injecter dans la variable Dao un objet d'une classe qui implemente l'interface Dao
-    public void setIDao(IDao iDao) {
-        this.iDao = iDao;
-    }
+    // public void setIDao(IDao iDao) {
+      //  this.iDao = iDao;
+//}
 }

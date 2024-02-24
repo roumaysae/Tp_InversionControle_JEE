@@ -1,8 +1,8 @@
 package dao;
 
 import org.springframework.stereotype.Component;
-
-@Component("dao")
+//l'annotation annotationsSpring
+@Component("dao") //creer moi un objet dao de cette classe
 public class DaoImpl implements  IDao{
 
     @Override

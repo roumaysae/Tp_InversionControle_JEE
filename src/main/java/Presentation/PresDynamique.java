@@ -6,8 +6,8 @@ import metier.IMetier;
 import java.io.File;
 import java.lang.reflect.Method;
 import java.util.Scanner;
-
-public class Pres2 {
+//injection dynamique
+public class PresDynamique {
     public static void main(String[] args) throws Exception {
 
         //lire le ficher config.txt
@@ -25,11 +25,11 @@ public class Pres2 {
 
         String metierClassName = scanner.nextLine();
         Class cMetier = Class.forName(metierClassName);
-        IMetier metier = (IMetier) cMetier.newInstance();
+        IMetier metier = (IMetier) cMetier.getConstructor(IDao.class).newInstance(dao);//injection via constructor
 
 //l'injection avec setDao on va la faire avec une maniere dynamique
-        Method method=cMetier.getMethod("setIDao",IDao.class);
-        method.invoke(metier,dao);//on execute la methode(j'invoke la methode setDao sur l'objet method et on transmet en parametre dao)
+//sans utiliser ceci pour avoir un code plus optimise //Method method=cMetier.getMethod("setIDao",IDao.class);
+        //      method.invoke(metier,dao);//on execute la methode(j'invoke la methode setDao sur l'objet method et on transmet en parametre dao)
 
         System.out.println("res : "+metier.calcul());
 
