@@ -43,7 +43,7 @@ L'architecture de projet :
 3. **Utilisation du Framework Spring**:
    - Utiliser le Framework Spring pour la gestion des dépendances.
    - Présenter deux approches : configuration XML et annotations, mettant en avant les avantages en termes de configuration et de testabilité.
-
+Dans cette partie j'ai travaille sur la version avec constructeur et avec la methode set pour injecter les dependences, vous pouvez trouvez cette partie au niveau de la branche Master.
 
 ## Conclusion
 
